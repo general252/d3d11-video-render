@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main_window.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="av_demuxer.cc">
+      <Filter>demuxer</Filter>
+    </ClCompile>
+    <ClCompile Include="av_decoder.cc">
+      <Filter>decode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="win">
+      <UniqueIdentifier>{7989e1e2-79b7-4569-99d2-d592ccd90f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{899bbe75-6d4b-4c98-a251-9b92be851f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{e52c92ad-c8ec-48d7-b880-b13c144bdf40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demuxer">
+      <UniqueIdentifier>{46ad03da-a8ee-48df-9011-b53e55c73a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decode">
+      <UniqueIdentifier>{705187f0-4d12-4fcd-a377-9b0cfd52111b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main_window.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader_vs.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader_vs.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="av_demuxer.h">
+      <Filter>demuxer</Filter>
+    </ClInclude>
+    <ClInclude Include="av_decoder.h">
+      <Filter>decode</Filter>
+    </ClInclude>
+    <ClInclude Include="av_log.h">
+      <Filter>demuxer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
